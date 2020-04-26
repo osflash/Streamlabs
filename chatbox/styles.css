@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: {font_size}; /* 12px */
+  overflow: hidden;
+}
+
+body {
+  text-shadow: 0 0 1px #000, 0 0 2px #000;
+  background: #000000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1.5rem; 
+  line-height: 1.5em;
+  color: {text_color}; /* #FFFFFF */
+}
+
+#log {
+  display: table;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 10px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#log > div {
+  display: flex;
+  margin-top: 2.5rem;
+  animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+  -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+#log > div .deleted {
+  visibility: hidden;
+}
+
+#log .emote {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0.4em 0.2em;
+  position: relative;
+}
+
+#log .emote img {
+  display: inline-block;
+  height: 1em;
+  opacity: 0;
+}
+
+#log .meta {
+  color: #F1F1F1;
+  position: absolute;
+  padding: 0 5px;
+  border-radius: 5px 0 5px 0;
+  transform: translate(-5px, -20px);
+}
+
+#log .meta {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#log .message {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  background: {background_color}; /* #FFFFFF */
+  border-radius: 5px 0px 5px 0px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .64)
+}
+
+.colon {
+  display: none;
+}
+
+.badge {
+  display: inline-block;
+  margin-right: 0.2em;
+  position: relative;
+  height: 1em;
+  vertical-align: middle;
+  top: -0.1em;
+}
+
+.name {
+  margin-left: 0.2em;
+}
