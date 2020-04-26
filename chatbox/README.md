@@ -6,6 +6,8 @@
 
 > Text Color : #FFFFFF
 
+> Font Size : 12px
+
 ## Tutorial
 
 [Link](https://streamlabs.com/dashboard#/chatbox) -> Enable Custom HTML/CSS -> Enabled
