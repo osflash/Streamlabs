@@ -2,7 +2,7 @@
 
 ### Recommended Colors
 
-> Background Color : #FFFFFF
+> Background Color : #FFFFFF00 // transparent
 
 > Text Color : #FFFFFF
 
